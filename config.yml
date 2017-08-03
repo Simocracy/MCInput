@@ -1,0 +1,25 @@
+meldungen:
+    nurKonsole: Kann nur von Konsole verwendet werden.
+    ircList:
+        nachricht: Im IRC online sind folgende %a Personen
+        dateifehler: Konnte IRC-Nickliste nicht auslesen :(
+        keinerDa: Keine Sau ist im IRC... :(
+    gameList:
+        nachricht: MC-Nickliste erfolgreich aktualisiert.
+        dateifehler: Konnte MC-Nickliste nicht schreiben :(
+
+dateien:
+    ircOn: ircon.txt
+    gameOn: gameon.txt
+
+umlaute:
+    ae: aaee
+    oe: ooee
+    ue: uuee
+    Ae: AAee
+    Oe: OOee
+    Ue: UUee
+
+ircBotVerbindung:
+    ipAdresse: 127.0.0.1
+    port: 45678

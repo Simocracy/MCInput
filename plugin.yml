@@ -1,0 +1,35 @@
+name: MCInput
+main: de.minecracy.mcInput.MCInput
+version: 0.5.5
+description: Einfaches Plugin, um externe Nachrichten im Chat anzuzeigen
+author: gobo77
+
+commands:
+    mci:
+        description: Einfache Nachricht im Chat anzeigen
+        usage: /<command> [Nachricht]
+    irclist:
+        description: Gibt aus, wer im IRC online ist
+        usage: /<command>
+        permission: mcinput.irc
+    mcir:
+        description: Lädt die Config neu
+        usage: /<command>
+        permission: mcinput.admin
+    mcilist:
+        description: Aktualisiert Online-Liste des Spiels
+        usage: /<command>
+        permission: mcinput.irc
+
+permissions:
+    mcinput.*:
+        children:
+            mcinput.erhalten: true
+            mcinput.irc: true
+            mcinput.admin: true
+    mcinput.erhalten:
+        default: true
+    mcinput.irc:
+        default: true
+    mcinput.admin:
+        default: op
